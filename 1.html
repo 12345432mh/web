@@ -3,16 +3,58 @@
 <head>
 <title>Web1</title>
 <meta charset="utf-8">
+<style>
+    body {
+        margin:0;
+    }
+    h1{
+            text-align: center;
+            font-size: 45px;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+    ol {
+        border-right: 1px solid gray;
+        width:100px;
+        margin: 0;
+        padding: 20px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+        padding-left: 33px;
+    }
+    #grid #article{
+        padding-left: 25px;
+    }
+    @media(max-width:800px) {
+        #grid{
+        display: block;}
+        ol{
+            border-right:none;
+        }
+        h1{
+            border-bottom: ;
+        }
+    }
+    </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
 <ol>
     <li> <a href="1.html">HTML</a></li>
     <li> <a href="2.html">CSS</a></li>
     <li> <a href="3.html">JavaScript</a></li>
 </ol>
+<div id="article">
 <h2>Poetic란?</h2>
 They have <a href="https://ko.wikipedia.org/" target="_blank" title="aaa">treated</a> it as a poetic invention and they have treated it as <strong>an <u>allegor</u>y meaning</strong> this, 
 <img src=1-1.jpg width="10%"> or the other thing. 
+</div>
+</div>
 </body>  
 </html>
